@@ -7,7 +7,7 @@ A front-end that attaches to client Api at "http://beer.fluentcloud.com/v1/beer"
 The Front-end:
 1. GET: all beers on "/" and a single beer at api/beers/:id.
 2. POST: Add a new beer to Api.
-3. PUT: Update the Likes to a Beer
+3. PUT: Update the likes to a beer
 
 
 ### Steps
