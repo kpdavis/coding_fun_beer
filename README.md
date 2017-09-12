@@ -2,7 +2,13 @@
 
 This is my first attempt at a react app.
 Built using the create-react-app cli.
-A front-end that attaches to client Api at "http://beer.fluentcloud.com/v1/beer"
+A front-end that attaches to client Api at "http://beer.fluentcloud.com/v1/beer".
+
+The Front-end:
+1. GET: all beers on "/" and a single beer at api/beers/:id.
+2. POST: Add a new beer to Api.
+3. PUT: Update the Likes to a Beer
+
 
 ### Steps
 * [x] Learn React-Redux
