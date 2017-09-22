@@ -5,7 +5,7 @@ class Beer extends Component {
   render(){
     return(
       <div className={'panel panel-default'}>
-        <Link to={`/beers/${this.props.beer.id}`}>
+        <Link to={`/beer/${this.props.beer.id}`}>
           <section className={"beer-listing panel-body"}>
             <h2 className={"name text-left"}>{this.props.beer.name}</h2>
 

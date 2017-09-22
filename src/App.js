@@ -26,7 +26,9 @@ class App extends Component {
             </nav>
             <div className={"container"}>
               <Route exact path="/" component={BeerList} />
-              <Route path={"/beers/:id"} component={SingleBeer} />
+              <Route path="/beer" component={BeerList} />
+              <Route path={"/beer/:id"} component={SingleBeer} />
+              <Route path="/add" component={AddNewBeer} />
             </div>
           </div>
         </Router>
