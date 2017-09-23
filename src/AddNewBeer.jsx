@@ -33,20 +33,19 @@ class AddNewBeer extends Component {
     .catch(err => console.error(err));
     this.ref.name.value = '';
     this.ref.likes.value = '';
-    
   }
   render() {
     return (
         <div>
   			     <form className={"beers"} onSubmit={this.addNewBeer}>
-                <label className={""} htmlFor="name" >Name of Beer:</label>
-  				      <input className={""} type="text" name="name" ref="name" />
-                <label className={""} htmlFor="likes" >Starting Likes</label>
-                <input className={""} type="number" name="likes" ref="likes" />
+                <label htmlFor="name" >Name of Beer:</label>
+  				      <input type="text" name="name" ref="name" />
+                <label htmlFor="likes" >Starting Likes</label>
+                <input type="number" name="likes" ref="likes" />
              </form>
         </div>
   		);
   	}
   }
 
-export default connector(BeerList);
+export default connector(AddNewBeer);

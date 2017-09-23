@@ -1,6 +1,8 @@
-import React, {Component} from 'react';
-import {connector} from './redux/beersStore'
-import Beer from './Beer'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { connector } from './redux/beersStore';
+import Beer from './Beer';
+import AddNewBeer from './AddNewBeer'
 
 
 class BeerList extends Component {
@@ -17,9 +19,14 @@ class BeerList extends Component {
 
   	render() {
   		return (
-  			<ul className={"beers"}>
-  				{this.generateBeers()}
-  			</ul>
+        <div>
+            <Link to='/add' component={ AddNewBeer }>
+              <button>Add a New Beer</button>
+            </Link>
+  			     <ul className={"beers"}>
+  				     {this.generateBeers()}
+  			     </ul>
+        </div>
   		);
   	}
   }

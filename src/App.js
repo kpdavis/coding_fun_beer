@@ -4,10 +4,11 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import {Provider} from 'react-redux';
-import {store} from './redux/beersStore'
+import { Provider } from 'react-redux';
+import { store } from './redux/beersStore'
 import BeerList from './BeerList';
 import SingleBeer from './SingleBeer'
+import AddNewBeer from './AddNewBeer'
 
 class App extends Component {
   render() {
